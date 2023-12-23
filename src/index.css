@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.shape_outer{
+    @apply text-2xl border-[1px] cursor-pointer max-sm:cursor-default border-gray-500 rounded-lg shadow shadow-[#ffffff2d] w-fit p-2
+}

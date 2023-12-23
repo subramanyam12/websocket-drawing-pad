@@ -1,0 +1,86 @@
+body {
+    cursor: non;
+    user-select: none;
+}
+
+.side_transition:hover {
+    transition: width 400ms ease-out;
+}
+
+.show_animate {
+    opacity: 0;
+    animation: show 300ms ease-in forwards;
+}
+
+@keyframes show {
+    to {
+        opacity: 1;
+    }
+}
+
+.animate_bottom {
+    animation: movebottom 600ms ease-out forwards;
+}
+
+@keyframes movebottom {
+    from {
+        top: -50px;
+        opacity: 0;
+    }
+
+    to {
+        top: 12px;
+        opacity: 1;
+    }
+}
+
+
+
+.room_btn:hover~div {
+    transform-origin: right center;
+    animation: moveright 350ms ease-in-out forwards;
+}
+
+
+@keyframes moveright {
+    to {
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+}
+
+.error_popup {
+    animation: popup 3300ms ease-out;
+}
+
+@keyframes popup {
+
+    5% , 90% {
+       visibility: visible;
+        bottom: 15px;
+        opacity: 1;
+    }
+}
+
+
+.error_popup > div {
+    width: 0px;
+    animation: popupline 3000ms linear;
+}
+
+@keyframes popupline {
+
+    to {
+        width: 100%;
+    }
+}
+
+/* .custom_gradient{
+    background:radial-gradient(rgba(255,255,255) 10%,black 10%);
+    background-size:50px 50px;
+} */
+
+/* .custom_gradient{
+    background: linear-gradient(to right,rgba(255,255,255) 10%,black 10%);
+    background-size:20px 20px;
+} */
