@@ -27,15 +27,16 @@ const Rooms = ({ addroom,closeroom,connectedbool ,setconnectedbool}) => {
         setroombool(false)
         addroom(name.trim())
       
-        setTimeout(()=>{
-            setconnectedbool(prev=>{
-                if(!prev){
-                    setroomname('')
-                    sessionStorage.removeItem('roomname')
-                }
-                    return prev
-             });
-        },1000)
+        // setTimeout(()=>{
+        //     setconnectedbool(prev=>{
+        //         if(!prev){
+        //             console.log('siddu');
+        //             setroomname('')
+        //             sessionStorage.removeItem('roomname')
+        //         }
+        //             return prev
+        //      });
+        // },3000)
 
         inputref.current.value = ''
         setroomname(name)
